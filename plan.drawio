@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="up-TA_BCbGejoNkFNgTC" name="Page-1">
-        <mxGraphModel dx="1130" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1130" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -22,7 +22,7 @@
                 <mxCell id="12" style="edgeStyle=none;html=1;entryX=0.55;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4" target="11">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="You want to buy a new LEGO set, but only have 180 minutes to build it. If each individual piece takes X time to build and you have Y total amount of pieces, will you have time to complete it? If yes, return true. If no, return false.&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="4" value="You want to buy a new LEGO set, but only have 180 minutes to build it. If each individual piece takes piecesTiime time to build and you have totalTime total amount of pieces, will you have time to complete it? If yes, return true. If no, return false.&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
                     <mxGeometry x="69" y="100" width="690" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Dreamer:&lt;br&gt;&lt;br&gt;Which set should I buy?&lt;br&gt;Can I buy more than 1 set?" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
@@ -47,7 +47,10 @@
                     <mxGeometry x="60" y="570" width="720" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="SOLUTION:&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
-                    <mxGeometry x="54" y="710" width="720" height="230" as="geometry"/>
+                    <mxGeometry x="54" y="710" width="720" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="What exactly am I wanting to test?&lt;br&gt;&lt;br&gt;- Check if the return is a boolean&lt;br&gt;- Check it returns the correct value, if its within 180 mins - true&lt;br&gt;- Check it return the correct value, if outside the 180 mins - its false" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
+                    <mxGeometry x="54" y="900" width="720" height="170" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
