@@ -3,8 +3,4 @@
 
 // If yes, return true. If no, return false.
 
-export function legoBuild(piecesTime, totalTime) {
-
-}
-
-
+export function legoBuild(piecesTime, totalTime) {}

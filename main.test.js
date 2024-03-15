@@ -8,8 +8,13 @@ test("should return a boolean", () => {
   expect(typeof actual).toBe("boolean");
 });
 
-// Test to check whether the value is correct - if it's within 180 mins it should return true
+// Test to check whether the value is correct - if it's within 180 mins it should return false
 // Example input 2, 100 - expected output false
+test("should check is the value is correct - return false", () => {
+  const expected = false;
+  const actual = legoBuild(2, 100);
+  expect(actual).toBe(expected);
+});
 
 // Test to check whether the value is correct - if it's outside 180 mins it should return false
 // Example input 1, 100 - expected output true
