@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="up-TA_BCbGejoNkFNgTC" name="Page-1">
-        <mxGraphModel dx="1370" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1370" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -22,7 +22,7 @@
                 <mxCell id="12" style="edgeStyle=none;html=1;entryX=0.55;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="You want to buy a new LEGO set, but only have 180 minutes to build it. If each individual piece takes piecesTiime time to build and you have totalTime total amount of pieces, will you have time to complete it? If yes, return true. If no, return false.&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                <mxCell id="4" value="You want to buy a new LEGO set, but only have 180 minutes to build it. If each individual piece takes piecesTiime time to build and you have totalPieces total amount of pieces, will you have time to complete it? If yes, return true. If no, return false.&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry x="69" y="100" width="690" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Dreamer:&lt;br&gt;&lt;br&gt;Which set should I buy?&lt;br&gt;Can I buy more than 1 set?" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
@@ -43,8 +43,8 @@
                 <mxCell id="15" value="MVP 3:&lt;br&gt;Test for the max amount of sets they can do within the time frame.&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry x="584" y="410" width="200" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="REFLECTIONS:&amp;nbsp;&lt;br&gt;&lt;br&gt;Creating the tests that pass the user was easier than I imagined, I did create 3 tests that fail the user which I found more difficult to get my head around." style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
-                    <mxGeometry x="54" y="750" width="720" height="170" as="geometry"/>
+                <mxCell id="16" value="REFLECTIONS:&amp;nbsp;&lt;br&gt;&lt;br&gt;Creating the tests that pass the user was more doable than I imagined, I did create 3 tests that fail the user which I found more difficult to get my head around.&lt;br&gt;&lt;br&gt;I struggled with getting confused when it came to failing the player and testing the test. Upon speaking to my team mates, adding in a requirement for the player to catch errors was the solution to where I was getting confused.&lt;br&gt;&lt;br&gt;Next time I would make sure I have enough time to double check the information I'm giving the player is accurate and not confusing. I had put totalTime as my second argument, when it should have been totalPieces. This was due to me rushing, next time I will be better with my time management.&amp;nbsp;&lt;br&gt;&lt;br&gt;I will also add in toThrow errors to the fail tests and make it clear that it a requirement for the player to complete." style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="54" y="750" width="720" height="230" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" value="What exactly am I wanting to test?&lt;br&gt;&lt;br&gt;- Check if the return is a boolean&lt;br&gt;- Check it returns the correct value, if its within 180 mins - true&lt;br&gt;- Check it return the correct value, if outside the 180 mins - its false&lt;br&gt;- Check if unwanted characters are called&lt;br&gt;- Check if anything is being called - empty then undefined&lt;br&gt;- Check if integers are positive" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
                     <mxGeometry x="54" y="555" width="720" height="170" as="geometry"/>

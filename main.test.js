@@ -68,14 +68,14 @@ test("should fail if invalid characters are inputed", () => {
 
 // Test if nothing is called - if empty then it's failed ✅
 test("should fail if nothing is called", () => {
-    expect(() => {
-        legoBuild(); // Call the function with no callback input
-      }).toThrow();
+  expect(() => {
+    legoBuild(); // Call the function with no callback input
+  }).toThrow();
 });
 
 // Test if integers are positive ✅
 test("should fail if a negative integer is called", () => {
-    const actual = legoBuild("piecesTime", "totalTime");
-  
-    expect(actual).toBeLessThan(0);
+  const actual = legoBuild(-1, -1);
+
+  expect(actual).toBeLessThan(0);
 });
