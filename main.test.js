@@ -50,6 +50,11 @@ test("should check is the random value is correct - return true", () => {
 
 // Test to check whether the value is correct - if it's outside 180 mins it should return false
 // Example input 5, 200 - expected output true
+test("should check is the random value is correct - return false", () => {
+  const expected = false;
+  const actual = legoBuild(5, 200);
+  expect(actual).toBe(expected);
+});
 
 // Test if unwanted characters are being called
 
