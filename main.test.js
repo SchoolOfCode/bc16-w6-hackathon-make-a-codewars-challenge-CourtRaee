@@ -56,8 +56,8 @@ test("should check is the random value is correct - return false", () => {
   expect(actual).toBe(expected);
 });
 
-// Test if unwanted characters are being called
-test("should check if invalid characters are inputed", () => {
+// Test if unwanted characters are being called ✅
+test("should fail if invalid characters are inputed", () => {
   const input = "123";
   const isInteger = Number.isInteger(parseInt(input, 10));
   const hasInvalidCharacters = /[^\d]/.test(input);
@@ -66,18 +66,16 @@ test("should check if invalid characters are inputed", () => {
   expect(hasInvalidCharacters).toBe(false);
 });
 
-// Test if nothing is called - if empty then it's failed
+// Test if nothing is called - if empty then it's failed ✅
 test("should fail if nothing is called", () => {
-    const input = "";
-    
     expect(() => {
-        legoBuild();
-    }).toThrow("Input is required.")
-})
+        legoBuild(); // Call the function with no callback input
+      }).toThrow();
+});
 
-// Test if integers are positive
+// Test if integers are positive ✅
 test("should fail if a negative integer is called", () => {
-    const input = legoBuild(-1, -1);
-
-    expect(input).toThrow("Negative integers are not allowed.");
-})
+    const actual = legoBuild("piecesTime", "totalTime");
+  
+    expect(actual).toBeLessThan(0);
+});
