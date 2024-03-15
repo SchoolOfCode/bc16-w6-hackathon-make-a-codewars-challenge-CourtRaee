@@ -57,6 +57,14 @@ test("should check is the random value is correct - return false", () => {
 });
 
 // Test if unwanted characters are being called
+test("should check if invalid characters are inputed", () => {
+  const input = "123";
+  const isInteger = Number.isInteger(parseInt(input, 10));
+  const hasInvalidCharacters = /[^\d]/.test(input);
+
+  expect(isInteger).toBe(true);
+  expect(hasInvalidCharacters).toBe(false);
+});
 
 // Test if nothing is called - if empty then it's failed
 
