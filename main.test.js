@@ -72,7 +72,12 @@ test("should fail if nothing is called", () => {
     
     expect(() => {
         legoBuild();
-    }).toThrow()
+    }).toThrow("Input is required.")
 })
 
 // Test if integers are positive
+test("should fail if a negative integer is called", () => {
+    const input = legoBuild(-1, -1);
+
+    expect(input).toThrow("Negative integers are not allowed.");
+})
