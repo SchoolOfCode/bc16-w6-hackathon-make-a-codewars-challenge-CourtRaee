@@ -1,8 +1,12 @@
-// import { defineConfig } from 'vitest/config'
 // import the vitest configuration
-
+import { test, expect } from "vitest";
+import { legoBuild } from "./main.js";
 
 // Test to check whether the return is a boolean
+test("should return a boolean", () => {
+  const actual = legoBuild("piecesTime", "totalTime");
+  expect(typeof actual).toBe("boolean");
+});
 
 // Test to check whether the value is correct - if it's within 180 mins it should return true
 // Example input 2, 100 - expected output false
