@@ -67,5 +67,12 @@ test("should check if invalid characters are inputed", () => {
 });
 
 // Test if nothing is called - if empty then it's failed
+test("should fail if nothing is called", () => {
+    const input = "";
+    
+    expect(() => {
+        legoBuild();
+    }).toThrow()
+})
 
 // Test if integers are positive
