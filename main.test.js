@@ -18,6 +18,11 @@ test("should check is the value is correct - return false", () => {
 
 // Test to check whether the value is correct - if it's outside 180 mins it should return false
 // Example input 1, 100 - expected output true
+test("should check is the value is correct - return true", () => {
+    const expected = true;
+    const actual = legoBuild(1, 100);
+    expect(actual).toBe(expected);
+  });
 
 // Test to check whether the value is correct - if it's within 180 mins it should return true
 // Example input 2, 50 - expected output true
